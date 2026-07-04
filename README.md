@@ -4,188 +4,106 @@
 
 ### AI-Powered Debt Relief & Financial Recovery Platform
 
-Built with **React**, **FastAPI**, **SQLite**, and **Google Gemini AI**
+Built with **React**, **FastAPI**, **SQLite**, and **Google Gemini API**
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
-![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-4285F4?logo=google)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Gemini](https://img.shields.io/badge/Google-Gemini_API-4285F4?logo=google)
 
 </div>
 
 ---
 
-# 📖 Overview
+## 📖 About
 
-**FinRelief AI** is a full-stack AI-powered financial assistance platform designed to help users manage their loans, evaluate financial health, estimate debt settlement opportunities, and generate professional negotiation letters using **Google Gemini AI**.
+**FinRelief AI** is an AI-powered financial assistance platform that helps users manage loans, analyze their financial condition, estimate debt settlement opportunities, and generate professional negotiation letters using **Google Gemini API**.
 
-The application combines financial analytics with Generative AI to provide users with intelligent recommendations for debt management through a modern and user-friendly web interface.
+The application combines a **React** frontend with a **FastAPI** backend and stores data in **SQLite**, providing a simple and secure debt management experience.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-## 🔐 Authentication
+### 🔐 Authentication
 
 - User Registration
-- Secure User Login
+- Secure Login
 - JWT Authentication
-- Password Hashing using bcrypt
-- Protected API Endpoints
+- Password Hashing
 
----
+### 💼 Loan Management
 
-## 💼 Loan Management
-
-- Add New Loans
-- View Loan Portfolio
-- Update Loan Details
+- Add Loans
+- View Loans
+- Update Loans
 - Delete Loans
-- SQLite Database Storage
 
----
+### 📊 Financial Analysis
 
-## 📊 Financial Analysis
-
-Analyze your financial condition using:
-
-- Monthly Income
-- Monthly Expenses
-- Monthly EMI
-- Outstanding Balance
-
-Automatically calculates:
-
-- Debt-to-Income Ratio (DTI)
+- Debt-to-Income Ratio
 - Monthly Savings
 - Financial Health Score
 - Risk Level
 
----
-
-## 📈 Settlement Prediction
-
-Predict possible debt settlements using:
-
-- Financial Health Score
-- Outstanding Balance
-
-Returns:
+### 📈 Settlement Prediction
 
 - Settlement Percentage
 - Estimated Settlement Amount
+- Recommendation
+
+### 🤖 AI Negotiation
+
+Using Google Gemini API:
+
+- Negotiation Strategy
 - Settlement Recommendation
-
----
-
-## 🤖 AI Negotiation Assistant
-
-Powered by **Google Gemini AI**
-
-Generates:
-
-- Personalized Negotiation Strategy
-- Settlement Recommendation
-- Professional Debt Negotiation Letter
-
-Additional Features:
-
+- Professional Negotiation Letter
 - Copy Letter
-- Download Letter (.txt)
+- Download Letter
 
 ---
 
-## 🎨 Responsive Dashboard
+## 🛠 Tech Stack
 
-- Modern Dark Theme
-- Responsive Layout
-- Interactive Dashboard
-- Real-time API Communication
-- User-friendly Forms
-
----
-
-# 🛠 Tech Stack
-
-| Layer | Technology |
-|--------|------------|
+| Category | Technology |
+|----------|------------|
 | Frontend | React, Vite, Axios |
 | Backend | FastAPI |
 | Database | SQLite |
 | ORM | SQLAlchemy |
-| Validation | Pydantic |
-| Authentication | JWT, bcrypt |
 | AI | Google Gemini API |
+| Authentication | JWT |
 | Language | Python, JavaScript |
 | Version Control | Git & GitHub |
 
 ---
 
-# 🏗 Project Architecture
-
-```text
-                React + Vite Frontend
-                        │
-                 Axios HTTP Requests
-                        │
-                FastAPI REST Backend
-                        │
-     ┌──────────┬──────────┬────────────┬────────────┐
-     │          │          │            │            │
- Authentication Loans  Financial  Settlement   Gemini AI
-                        Analysis   Prediction
-     │
-SQLite Database
-```
-
----
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 FinReliefAI
 │
 ├── backend
 │   ├── app
-│   │   ├── ai.py
-│   │   ├── auth.py
-│   │   ├── database.py
-│   │   ├── financial.py
-│   │   ├── loans.py
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── schemas.py
-│   │   └── utils.py
-│   │
 │   ├── requirements.txt
-│   ├── .env.example
-│   └── ...
+│   └── .env.example
 │
 ├── frontend
-│   ├── public
 │   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   ├── package.json
-│   └── vite.config.js
+│   ├── public
+│   └── package.json
 │
 ├── README.md
 └── .gitignore
 ```
 
 ---
+## ⚙️ Installation
 
-# ⚙ Installation
-
-## Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/srisaiyadav0904-collab/FinReliefAI.git
@@ -195,29 +113,35 @@ cd FinReliefAI
 
 ---
 
-## Backend Setup
+## 🔧 Backend Setup
 
-Create Virtual Environment
+Create a virtual environment:
 
 ```bash
 python -m venv .venv
 ```
 
-Activate Environment
+Activate the environment:
 
-Windows
+**Windows**
 
-```bash
+```powershell
 .venv\Scripts\activate
 ```
 
-Install Dependencies
+**Linux / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
 
 ```bash
 pip install -r backend/requirements.txt
 ```
 
-Run Backend
+Run the backend:
 
 ```bash
 cd backend
@@ -231,7 +155,7 @@ Backend URL
 http://127.0.0.1:8000
 ```
 
-Swagger API
+API Documentation
 
 ```
 http://127.0.0.1:8000/docs
@@ -239,7 +163,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## Frontend Setup
+## 💻 Frontend Setup
 
 ```bash
 cd frontend
@@ -257,9 +181,23 @@ http://localhost:5173
 
 ---
 
-# 🔑 Environment Variables
+## 🔑 Environment Variables
 
-Create a `.env` file inside the **backend** directory.
+Copy the example environment file.
+
+**Windows**
+
+```powershell
+Copy-Item .env.example .env
+```
+
+**Linux / macOS**
+
+```bash
+cp .env.example .env
+```
+
+Update your `.env` file with your own values.
 
 ```env
 SECRET_KEY=your_secret_key
@@ -272,67 +210,32 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ---
 
-# 📡 REST API Endpoints
+## 📡 API Endpoints
 
 | Method | Endpoint | Description |
-|----------|----------------------------|-----------------------------|
+|---------|----------|-------------|
 | POST | `/register` | Register User |
 | POST | `/login` | User Login |
-| GET | `/loans` | Get All Loans |
-| POST | `/loans` | Create Loan |
+| GET | `/loans` | Get User Loans |
+| POST | `/loans` | Add New Loan |
 | PUT | `/loans/{id}` | Update Loan |
 | DELETE | `/loans/{id}` | Delete Loan |
-| POST | `/financial-analysis` | Financial Analysis |
-| POST | `/settlement-prediction` | Settlement Prediction |
-| POST | `/ai-negotiation` | AI Negotiation |
+| POST | `/financial-analysis` | Analyze Financial Health |
+| POST | `/settlement-prediction` | Predict Settlement |
+| POST | `/ai-negotiation` | Generate AI Negotiation |
 
 ---
+## 🤖 AI Integration
 
-# 🤖 Google Gemini AI Integration
+FinRelief AI uses **Google Gemini API** to generate intelligent debt negotiation content based on the user's financial details.
 
-Google Gemini AI analyzes the user's financial information and generates:
+The AI module generates:
 
-- Personalized Negotiation Strategy
+- Negotiation Strategy
 - Settlement Recommendation
 - Professional Negotiation Letter
 
-If the Gemini API is unavailable, the application automatically returns a fallback response to ensure uninterrupted user experience.
-
----
-
-# 🔒 Security Features
-
-- JWT Authentication
-- Password Hashing (bcrypt)
-- Protected API Routes
-- Environment Variable Configuration
-- Secure Credential Storage
-
----
-
-# 🗄 Database
-
-The application uses **SQLite** with **SQLAlchemy ORM**.
-
-Database stores:
-
-- User Information
-- Loan Details
-- Authentication Data
-
----
-
-# 🚀 Future Enhancements
-
-- Email Verification
-- Password Reset
-- PostgreSQL Support
-- PDF Report Generation
-- Financial Charts & Analytics
-- Loan Payment Tracking
-- Multi-language Support
-- Docker Deployment
-- Cloud Hosting
+If the Gemini API is unavailable, the application automatically returns a fallback response.
 
 ---
 
@@ -342,41 +245,39 @@ Database stores:
 
 **Challa Srisai**
 
-**Project Lead**
+**Responsibilities**
 
-**Major Contributions**
-- 🏗️ Project Architecture
-- 🤖 AI Integration
-- ⚙️ Backend Development
-- 👨‍💼 Team Coordination
-- 🚀 Deployment
-
----
+- Project Architecture
+- Backend Development
+- Google Gemini API Integration
+- Team Coordination
+- Deployment
 
 ### 👨‍💻 Team Members
 
 | Member | Role |
 |--------|------|
-| Anand Kumar | Frontend Developer |
 | Annem Manoj Kumar | Backend Developer |
 | Rithesh Pennaperuru | Testing & Documentation |
 | Vishnu Vardhan Dandu | UI Support |
 
 ---
-# 📄 License
 
-This project is licensed under the **MIT License**.
+## 🚀 Future Scope
+
+- Email Verification
+- Password Reset
+- PostgreSQL Support
+- PDF Report Generation
+- Financial Dashboard
+- Docker Deployment
+- Cloud Deployment
 
 ---
 
-# 🙏 Acknowledgements
+## 📄 License
 
-- FastAPI
-- React
-- Vite
-- SQLite
-- SQLAlchemy
-- Google Gemini AI
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -384,6 +285,6 @@ This project is licensed under the **MIT License**.
 
 ### ⭐ If you found this project useful, consider giving it a star!
 
-**Made with ❤️ using FastAPI, React & Google Gemini AI**
+Made with ❤️ using **FastAPI**, **React**, and **Google Gemini API**
 
 </div>
