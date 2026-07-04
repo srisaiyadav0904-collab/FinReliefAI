@@ -336,24 +336,32 @@ Database stores:
 
 ---
 
-⭐ Team Lead
-──────────────────────────────
-👤 Challa Srisai
+## 👥 Team
 
-Project Lead
+### ⭐ Team Lead
 
-• Project Architecture
-• AI Integration
-• Backend Development
-• Team Coordination
-• Deployment
+**Challa Srisai**
 
-──────────────────────────────
+**Project Lead**
 
-👤 Anand Kumar        Frontend Developer
-👤 Annem Manoj Kumar Backend Developer
-👤 Rithesh Pennaperuru Testing & Documentation
-👤 Vishnu Vardhan Dandu UI Support
+**Major Contributions**
+- 🏗️ Project Architecture
+- 🤖 AI Integration
+- ⚙️ Backend Development
+- 👨‍💼 Team Coordination
+- 🚀 Deployment
+
+---
+
+### 👨‍💻 Team Members
+
+| Member | Role |
+|--------|------|
+| Anand Kumar | Frontend Developer |
+| Annem Manoj Kumar | Backend Developer |
+| Rithesh Pennaperuru | Testing & Documentation |
+| Vishnu Vardhan Dandu | UI Support |
+
 # 📄 License
 
 This project is licensed under the **MIT License**.
