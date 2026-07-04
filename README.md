@@ -336,13 +336,24 @@ Database stores:
 
 ---
 
-# 👨‍💻 Contributors
+⭐ Team Lead
+──────────────────────────────
+👤 Challa Srisai
 
-- **challa sri sai**
-- Team Members
+Project Lead
 
----
+• Project Architecture
+• AI Integration
+• Backend Development
+• Team Coordination
+• Deployment
 
+──────────────────────────────
+
+👤 Anand Kumar        Frontend Developer
+👤 Annem Manoj Kumar Backend Developer
+👤 Rithesh Pennaperuru Testing & Documentation
+👤 Vishnu Vardhan Dandu UI Support
 # 📄 License
 
 This project is licensed under the **MIT License**.
