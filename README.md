@@ -362,6 +362,7 @@ Database stores:
 | Rithesh Pennaperuru | Testing & Documentation |
 | Vishnu Vardhan Dandu | UI Support |
 
+---
 # 📄 License
 
 This project is licensed under the **MIT License**.
